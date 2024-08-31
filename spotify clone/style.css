@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap');
+
+body{
+    background-color: antiquewhite;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: "Roboto", sans-serif;
+    
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 8vh;
+    background-color: black;
+    align-items: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    
+    
+}
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+    width: 8vw;
+    height: 8vh;
+    border-radius:12px;
+    
+}
+.container{
+    min-height: 68vh;
+    background-color: black;
+    color: white;
+    font-family: roboto, sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    padding: 30px;
+    border-radius: 20px;
+    background-image: url('bg.jpg' );
+    background-attachment: fixed;
+    background-size:auto;
+    flex-direction: column;
+
+    
+}
+.bottom{
+    height: 12vh;
+    position: sticky;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    flex-direction: column;
+
+}
+.icons{
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+}
+.icons i{
+    cursor: pointer;
+}
+#myProgressBar{
+    cursor: pointer;
+    text-align: center;
+    width: 80vw;
+    
+}
+.songItemContainer{
+    margin-top: 40px;
+}
+
+.songItem{
+height: 7vh;
+display: flex;
+background-color: white;
+width: 35vw;
+color: black;
+justify-content: space-between;
+align-items: center;
+margin: 12px 0;
+border-radius: 34px;
+
+}
+
+.songItem img{
+    height:6vh;
+    margin-left: 1vw;
+    /* border-top-left-radius: 34px;
+    border-bottom-left-radius: 34px; */
+    border-radius: 50%;
+}
+.timestamp{
+    margin:0 23px;
+}
+.timestamp span{
+    cursor: pointer;
+}
+.songinfo{
+    position: absolute;
+    left: 0;
+    
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity ease-in;
+}
